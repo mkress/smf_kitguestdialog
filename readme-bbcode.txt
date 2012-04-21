@@ -1,9 +1,8 @@
-SMF GuestDialog mod by http://kress.it
-Mod for Simplemachines foru
+GuestDialog by [url=http://kress.it]kress.it[/url]
 /*******************************************************************************
-* Guest Dialog Â© 2012, Markus Kress - Kress.IT							       *
+* Guest Dialog © 2012, Markus Kress - Kress.IT							       *
 ********************************************************************************
-*																			   *
+* readme.txt																   *
 ********************************************************************************
 * License http://creativecommons.org/licenses/by-sa/3.0/deed.de CC BY-SA 	   *
 * Support for this software  http://kress.it and							   *
