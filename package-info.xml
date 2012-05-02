@@ -3,19 +3,19 @@
 <package-info xmlns="http://www.simplemachines.org/xml/package-info" xmlns:smf="http://www.simplemachines.org/">
 	<id>mkress:KitGuestDialog</id>
 	<name>Guest Dialog</name>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<type>modification</type>
 	
 	<install for="2.0 - 2.0.99">
 		<readme parsebbc="true">readme-bbcode.txt</readme>
 		<require-dir name="default/languages" destination="$themedir" />
 		<require-file name="core/Subs-KitGuestDialog.php" destination="$sourcedir" />
-		<code>hooks.php</code>
+		<code>install.php</code>
 		<redirect url="?action=admin;area=modsettings" timeout="1000" />
 	</install>
 	
 	<uninstall for="2.0 - 2.0.99">
-		<code>hooks.php</code>
+		<code>uninstall.php</code>
 		<remove-file name="$sourcedir/Subs-KitGuestDialog.php" />
 		<remove-dir name="$languagedir/KitGuestDialog.english.php" />
 		<remove-dir name="$languagedir/KitGuestDialog.german.php" />

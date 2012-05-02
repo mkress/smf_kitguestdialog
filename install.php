@@ -23,14 +23,8 @@ $hooks = array(
 	'integrate_general_mod_settings' => 'kit_guestdialog_mod_settings'
 );
 
-if (!empty($context['uninstalling']))
-	$call = 'remove_integration_function';
-
-else
-	$call = 'add_integration_function';
-
 foreach ($hooks as $hook => $function)
-	$call($hook, $function);
+	add_integration_function($hook, $function);
 	
 if (SMF == 'SSI')
 	echo 'Database changes are complete! Please wait...';
