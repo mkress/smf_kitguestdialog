@@ -44,6 +44,11 @@ function kit_guestdialog_load_theme()
 			$modSettings['kit_guestdialog_style'] = 'ui-lightness';
 		}
 		
+		$message = parse_bbc($modSettings['kit_guestdialog_text']);
+		
+		//remove new lines
+		$message = str_replace(array("\n"), '', $message);
+		
 		// set dialog script and style headers
 		$context['html_headers'] .= '
 			<script type="text/javascript">
@@ -71,7 +76,7 @@ function kit_guestdialog_load_theme()
 				if (kitGuestDialog == 0)
 				{
 					var mydialog = $(\'<div></div>\')
-					.html(\''.parse_bbc($modSettings['kit_guestdialog_text']).'\')
+					.html(\''.$message.'\')
 					.dialog({
 					  autoOpen: true,
 					  title: \''.$modSettings['kit_guestdialog_title'].'\',
