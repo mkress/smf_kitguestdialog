@@ -75,7 +75,7 @@ function kit_guestdialog_load_theme()
 			{
 				if (kitGuestDialog == 0)
 				{
-					var mydialog = $(\'<div></div>\')
+					var mydialog = jQuery(\'<div></div>\')
 					.html(\''.$message.'\')
 					.dialog({
 					  autoOpen: true,
